@@ -480,19 +480,19 @@ footer {
 .contact .form input::placeholder {
     color: white;
 }
-.contact form > div::before,
-.contact form > div::after {
+.contact form > div:not(:last-child)::before,
+.contact form > div:not(:last-child)::after {
     content: '';
     position: absolute;
     width: 100%;
     bottom: 0;
     left: 0;
 }
-.contact form > div::before {
+.contact form > div:not(:last-child)::before {
     height: 1px;
     background-color: white;
 }
-.contact form > div::after {
+.contact form > div:not(:last-child)::after {
     height: 10px;
     border-left: 1px solid white;
     border-right: 1px solid white;
